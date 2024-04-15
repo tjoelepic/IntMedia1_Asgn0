@@ -3,7 +3,7 @@ body {
     sans-serif;
   color: white;
   background-color: #222222;
-  max-width: 800px;
+  max-width: 900px;
   margin: auto;
 }
 
@@ -53,10 +53,11 @@ main {
 }
 
 h3 {
-  padding: 1rem;
+  padding-bottom: 1rem;
   font-weight: bold;
+  text-indent: 1rem;
 }
 
 p {
-  padding-bottom: 24px;
+  padding-bottom: 32px;
 }
