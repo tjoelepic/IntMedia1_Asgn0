@@ -29,11 +29,13 @@ nav {
 }
 
 a {
+  /* removes the purple link colour */
   text-decoration: none;
   color: white;
 }
 
 nav > * {
+  /* makes all elements in nav have a dotted border */
   border-style: dotted;
   border-radius: 17px;
   padding: 12px;
