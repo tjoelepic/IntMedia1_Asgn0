@@ -1,0 +1,31 @@
+#heart {
+  width: 100px;
+  height: 100px;
+  animation: heartbeat 2s infinite;
+}
+
+@keyframes heartbeat {
+  0% {
+    scale: 1;
+  }
+  50% {
+    scale: 0.8;
+  }
+  100% {
+    scale: 1;
+  }
+}
+
+#myButton {
+  font: arial;
+}
+
+#side-drawer {
+  width: 200px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: -190px;
+  background-color: darkslategrey;
+  transition: translate 0.4s linear;
+}
