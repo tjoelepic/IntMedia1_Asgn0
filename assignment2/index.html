@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 2</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header class="container">
+      <h1>
+        Music designed <br />
+        to study alongside
+      </h1>
+      <p>Use the timers to keep <br />track of your study</p>
+    </header>
+
+    <!-- Main Content Section -->
+    <main class="container">
+      <!-- Media Player Section -->
+      <div class="media-player">
+        <!-- this is the video object -->
+        <video id="custom-video-player" controls loop>
+          <source
+            src="https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/miac.mp4"
+            type="video/mp4"
+          />
+        </video>
+        <!-- this is the object containing all the buttons -->
+        <div class="custom-controls">
+          <!-- play and pause button -->
+          <button id="play-pause-button">
+            <img
+              id="play-pause-img"
+              src="https://img.icons8.com/ios-glyphs/30/play--v1.png"
+              alt="Play Button"
+            />
+          </button>
+          <!-- mute button -->
+          <button id="mute-unmute-button">
+            <img
+              id="mute-unmute-img"
+              src="https://img.icons8.com/ios-glyphs/30/no-audio--v1.png"
+              alt="Mute unmute Button"
+            />
+          </button>
+          <!-- lower volume button -->
+          <button id="decrease-volume-button">
+            <img
+              id="decrease-volume-img"
+              src="https://img.icons8.com/ios-glyphs/30/low-volume.png"
+              alt="Decrease volume Button"
+            />
+          </button>
+          <!-- increase volume button -->
+          <button id="increase-volume-button">
+            <img
+              id="increase-volume-img"
+              src="https://img.icons8.com/ios-glyphs/30/high-volume--v1.png"
+              alt="Increase volume Button"
+            />
+          </button>
+          <!-- i chose to not include a progress bar and other control buttons because 
+            i thought that more elements added would be distracting and complicate the experience 
+            of running a timer while trying to study. I thought that the increase and decrease volume buttons
+            significantly improve the website experience for most people and were important enough to add -->
+        </div>
+        <!-- these are the custom buttons I made to play the video and Pause it after the timer has ended -->
+        <div class="custom-controls">
+          <button id="play-5-button" alt="5 Minute Timer Play Video Button">
+            5min
+          </button>
+          <button id="play-25-button" alt="25 Minute Timer Play Video Button">
+            25min
+          </button>
+          <button id="play-50-button" alt="50 Minute Timer Play Video Button">
+            50min
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="container">
+      <p>
+        &copy; 2024 Media Player Website. All rights reserved.
+        <a href="https://icons8.com/icon/59862/play">Play</a>,
+        <a href="https://icons8.com/icon/61012/pause">Pause</a>,
+        <a href="https://icons8.com/icon/91635/no-audio">Mute</a>,
+        <a href="https://icons8.com/icon/91634/low-volume">Quiten</a>,
+        <a href="https://icons8.com/icon/59734/audio">Louden</a>
+        icons by <a href="https://icons8.com">Icons8</a>
+      </p>
+    </footer>
+  </body>
+</html>
