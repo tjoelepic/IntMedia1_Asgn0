@@ -1,0 +1,153 @@
+:root {
+  --background-colour: green;
+
+  --border-radius: 12px;
+
+  --grid-columns: 2;
+  --grid-rows: 2;
+  --grid-gap: 18px;
+
+  --grid-column-widths: 50px 50px 50px;
+  --grid-row-heights: 50px 50px 50px;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+/* bg colours to test layout */
+
+body {
+  background: var(--background-colour);
+}
+header {
+  background: red;
+}
+.title {
+  background: blue;
+}
+.canvasTools {
+  background: lightblue;
+}
+.colourTools {
+  background: purple;
+}
+main {
+  background: orange;
+}
+.grid {
+  background: yellow;
+}
+.gridItem {
+  background: white;
+}
+
+/* styling */
+
+header {
+  height: 16vh;
+  display: flex;
+  flex-direction: row;
+}
+
+header > * {
+  margin: 9px;
+  border-radius: var(--border-radius);
+}
+
+.title {
+  width: 12rem;
+  align-content: center;
+  text-align: center;
+}
+.title a {
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: white;
+}
+
+.canvasTools,
+.colourTools {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.canvasTools > *,
+.colourTools > * {
+  margin-left: 9px;
+  margin-right: 9px;
+  text-align: center;
+}
+
+button {
+  width: 36px;
+}
+
+.colourBox {
+  width: 4rem;
+  height: 50%;
+  cursor: pointer;
+  align-content: center;
+}
+
+.red {
+  background: red;
+}
+
+.orange {
+  background: orange;
+}
+
+.yellow {
+  background: yellow;
+}
+
+.green {
+  background: green;
+}
+
+.blue {
+  background: blue;
+}
+
+.purple {
+  background: purple;
+}
+
+.white {
+  background: white;
+}
+
+.black {
+  background: black;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 84vh;
+}
+
+.grid {
+  display: grid;
+  max-height: 95%;
+  min-height: 3%;
+  max-width: 95%;
+  min-width: 3%;
+  grid-template-columns: var(--grid-column-widths);
+  grid-template-rows: var(--grid-row-heights);
+  gap: var(--grid-gap);
+}
+
+.gridItem {
+  min-height: 18px;
+  min-width: 18px;
+  cursor: nwse-resize;
+  background: white;
+}

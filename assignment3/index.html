@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 3</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="title">
+        <a href="../">Assignment 3</a>
+      </div>
+      <div class="canvasTools">
+        <div class="columnCounter">
+          <p>Columns:</p>
+          <button id="columnAdd">+</button>
+          <p id="columnNumber">3</p>
+          <button id="columnSubtract">-</button>
+        </div>
+        <div class="rowCounter">
+          <p>Rows:</p>
+          <button id="rowAdd">+</button>
+          <p id="rowNumber">3</p>
+          <button id="rowSubtract">-</button>
+        </div>
+        <div class="gapCounter">
+          <p>Gap:</p>
+          <button id="gapAdd">+</button>
+          <p id="gapNumber">18</p>
+          <button id="gapSubtract">-</button>
+        </div>
+      </div>
+      <div class="colourTools">
+        <div class="colourBox red" draggable="true">Red</div>
+        <div class="colourBox orange" draggable="true">Orange</div>
+        <div class="colourBox yellow" draggable="true">Yellow</div>
+        <div class="colourBox green" draggable="true">Green</div>
+        <div class="colourBox blue" draggable="true">Blue</div>
+        <div class="colourBox purple" draggable="true">Purple</div>
+        <div class="colourBox white" draggable="true">White</div>
+        <div class="colourBox black" draggable="true">Black</div>
+      </div>
+    </header>
+    <main>
+      <div class="grid" id="grid">
+        <div class="gridItem" id="0"></div>
+        <div class="gridItem" id="1"></div>
+        <div class="gridItem" id="2"></div>
+        <div class="gridItem" id="3"></div>
+        <div class="gridItem" id="4"></div>
+        <div class="gridItem" id="5"></div>
+        <div class="gridItem" id="6"></div>
+        <div class="gridItem" id="7"></div>
+        <div class="gridItem" id="8"></div>
+      </div>
+    </main>
+  </body>
+</html>
+
+<!-- plan:
+    main then a div for grid
+    header for:
+    div: home button/title
+    div: canvas settings
+    div: toolbar
+
+    canvas tools features:
+    no. columns
+    no. rows
+    (grid gap)?
+    (line style)?
+    (change bg colour)
+
+    colour tools
+    colours:
+        red
+        orange
+        yellow
+        green
+        blue
+        purple
+        white
+        grey
+        black
+        (pink)?
+        (brown)?
+    (change bg colour)
+
+-->
