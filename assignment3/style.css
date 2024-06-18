@@ -3,24 +3,33 @@
 
   --border-radius: 12px;
 
+  /* --grid-columns and --grid-rows are only called and used in the js file 
+  but i just realised now and its too late to change them to variables in that file */
   --grid-columns: 2;
   --grid-rows: 2;
+
   --grid-gap: 18px;
 
   --grid-column-widths: 50px 50px 50px;
   --grid-row-heights: 50px 50px 50px;
 }
 
+/* setting all objects to have a default margin and padding of zero and 
+set the font of the page to gill sans */
 * {
   margin: 0px;
   padding: 0px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+/* sets the background of the whole page */
+body {
+  background: #222222;
 }
 
 /* bg colours to test layout */
 
-body {
+/* body {
   background: var(--background-colour);
 }
 header {
@@ -43,26 +52,33 @@ main {
 }
 .gridItem {
   background: white;
-}
+} */
 
 /* styling */
 
+/* set the header height and organise the divs inside */
 header {
-  height: 16vh;
+  height: 100px;
   display: flex;
   flex-direction: row;
 }
 
+/* sets the elements inside the header to have a small margin, 
+rounded corners, and a light grey background */
 header > * {
-  margin: 9px;
+  margin: 4px;
   border-radius: var(--border-radius);
+  background: #444444;
 }
 
+/* sets the size and alignment of the title div box */
 .title {
   width: 12rem;
   align-content: center;
   text-align: center;
+  padding: 4px;
 }
+/* sets the text style of the type inside the title element */
 .title a {
   font-weight: bold;
   font-size: 1.5rem;
@@ -70,6 +86,7 @@ header > * {
   color: white;
 }
 
+/* sets the flex and direction of the objects inside each toolbar */
 .canvasTools,
 .colourTools {
   display: flex;
@@ -77,34 +94,47 @@ header > * {
   align-items: center;
 }
 
+/* sets the style of the text inside the toolbars */
 .canvasTools > *,
 .colourTools > * {
-  margin-left: 9px;
-  margin-right: 9px;
+  margin-left: 8px;
+  margin-right: 8px;
   text-align: center;
+  color: white;
 }
 
+/* sets the size and style of the buttons and symbols in the buttons */
 button {
   width: 36px;
+  font-weight: bolder;
+  cursor: pointer;
 }
 
+/* sets the style for the colourbox elements */
 .colourBox {
   width: 4rem;
-  height: 50%;
+  height: 70%;
+  border-radius: var(--border-radius);
   cursor: pointer;
   align-content: center;
 }
 
+/* sets the background colours for the colourbox objects. 
+the script takes the colour from these attributes when changing
+the gridItems cbackground color. some colourboxes have their text colour 
+set to black so they are easier to read.*/
 .red {
   background: red;
 }
 
 .orange {
   background: orange;
+  color: black;
 }
 
 .yellow {
   background: yellow;
+  color: black;
 }
 
 .green {
@@ -121,12 +151,14 @@ button {
 
 .white {
   background: white;
+  color: black;
 }
 
 .black {
   background: black;
 }
 
+/* sets the size and alignment for the main element from below the header to the bottom of the page */
 main {
   display: flex;
   justify-content: center;
@@ -134,6 +166,9 @@ main {
   height: 84vh;
 }
 
+/* sets tthe default settings for the grid as well as setting 
+minimum and maximum sizes to avoid the grid from breaking to where it cant
+be fixed without the page being reloaded*/
 .grid {
   display: grid;
   max-height: 95%;
@@ -145,6 +180,7 @@ main {
   gap: var(--grid-gap);
 }
 
+/* sets the minimum sizes for each gridItem and changes the cursor to resize when hovering */
 .gridItem {
   min-height: 18px;
   min-width: 18px;

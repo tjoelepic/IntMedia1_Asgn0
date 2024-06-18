@@ -4,11 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Assignment 3</title>
+    <!-- links to style files -->
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
+    <!-- link to the javascript file -->
     <script src="script.js" defer></script>
   </head>
   <body>
+    <!-- the header is the top bar and contains the title and both tool sections -->
     <header>
       <div class="title">
         <a href="../">Assignment 3</a>
@@ -16,6 +19,8 @@
       <div class="canvasTools">
         <div class="columnCounter">
           <p>Columns:</p>
+          <!-- these ids are used to create click listening events for buttons 
+            and to change the displayed column, row, or gap count -->
           <button id="columnAdd">+</button>
           <p id="columnNumber">3</p>
           <button id="columnSubtract">-</button>
@@ -34,6 +39,9 @@
         </div>
       </div>
       <div class="colourTools">
+        <!-- each colourbox has a class to add the dragging script functions and a colour class
+        to change the background colour. each are set to draggable="true" because i couldn't
+        figure out how to do it in the .css-->
         <div class="colourBox red" draggable="true">Red</div>
         <div class="colourBox orange" draggable="true">Orange</div>
         <div class="colourBox yellow" draggable="true">Yellow</div>
@@ -45,7 +53,10 @@
       </div>
     </header>
     <main>
+      <!-- i call the grid id here to grab all child objects in one call -->
       <div class="grid" id="grid">
+        <!-- the gridItem class is used to add the script functions and the ids are used to 
+        figure out the row and column of the box to change the correct variables -->
         <div class="gridItem" id="0"></div>
         <div class="gridItem" id="1"></div>
         <div class="gridItem" id="2"></div>
